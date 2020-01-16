@@ -1,11 +1,12 @@
+import "./styles/global.css";
 import React from "react";
 import { render } from "react-dom";
-import styles from "./styles/global.css";
+import Calculator from "./components/Calculator";
 
 const App = () => {
   return (
-    <div className={`${styles.home}`}>
-      <h1>a lot of configuration</h1>
+    <div style={{ marginTop: 30, textAlign: "center" }}>
+      <Calculator />
     </div>
   );
 };
